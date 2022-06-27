@@ -21,7 +21,12 @@ I have made sure to add the graphs I selected to calculate sigma value (SD) unde
 To use this code that incorporates the Bayesian distance calculator you need to be using a machine that can run Fortran code (Linux is preferable). 
 You will want to have a folder that contains the distance code, the Baysian_distance_2019_fromlist_v2.4.f , and the output csv from the velocity code. 
 The velocity code outputs two different velocities; hence you need to choose which velocity you would like to use to calculate the distance with. To do that, you can change the value of the variable ‘Vcel’ to True or False where if True, it will use the gaussian fit velocity, and if false it will use the peak velocity. 
+
+More on Reid et al code: http://bessel.vlbi-astrometry.org/node/378
+
 The results of this code are saved in a csv file,(distance_results.csv) which you can change the name of with what you want to name it. 
+
+Gfortran on Ubuntu is what works for us at C of I, run command is 'gfortran Bayesian_distance_2019_fromlist_v2.4.f'
 
 # How to use the Guassian Fit checking code: 
 name of code: 
